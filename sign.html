@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>sign in page</title>
+</head>
+<body  class="c1">
+    <form action="describe.html">
+<div class="c2">
+<fieldset class="c3">
+   <legend class="c4"> <h1>Sign in</h1></legend>
+   <div class="c5">
+    <p><span id="i1"><b>&nbsp;State:</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="state" id="state" onchange="populate(this.id,'district')" required> <!--These are all the states of India. User has to select any one state-->
+            <option value="">--Select State</option>
+            <option value="andhra pradesh">Andhra Pradesh</option>
+            <option value="arunachal pradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chattisgarh">Chattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal pradesh">Himachal Pradesh</option>
+            <option value="jammu and kashmir">Jammu and Kashmir</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya pradesh">Madhya Pradesh</option>
+            <option value="mahaarastra">Maharastra</option>
+            <option value="manipur">Manipur</option>
+            <option value="meghalaya">Meghalaya</option>
+            <option value="mizoram">Mizoram</option>
+            <option value="nagaland">Nagaland</option>
+            <option value="odisha">Odisha</option>
+            <option value="punjab">Punjab</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="sikkim">Sikkim</option>
+            <option value="tamil nadu">Tamil Nadu</option>
+            <option value="telangana">Telangana</option>
+            <option value="tripura">Tripura</option>
+            <option value="uttar pradesh">Uttar Pradesh</option>
+            <option value="uttarakhand">Uttarakhand</option>
+       	    <option value="west bengal">West Bengal</option>
+        </select>
+    </p>
+   <p><span id="i2"><b>District:</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="district" id="district" required> <!--These are all the district of Andhra Pradesh . User has to select any one district -->
+            <option value="">--Select District</option>
+        </select>
+    </p>
+    <p><span id="i3"><b>Court Complex:</b></span>
+        <select name="court_complex" id="court_complex"> <!--These are all the states of India. User has to select any one state-->
+            <option value="">--Select Court Complex</option>
+        </select>
+    </p>
+   <p><span id="i4"><b>&nbsp;&nbsp;Case Number:</b></span>&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" name="case_number" id="case_number" required></p>
+   <p><span id="i5"><a href="describe.html"><input type="submit" value="Next"></a></span></p>
+   <p><span id="i6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Status:</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="i7"><input type="radio" value="completed">Completed&nbsp;<input type="radio" value="pending">
+     Pending&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="InProcess">InProcess</span>
+</p> 
+
+</div>
+</fieldset>
+</div>
+</div>
+</form>
+<script>
+    function populate(s1,s2)
+    {
+        var s1= document.getElementById(s1);
+        var s2= document.getElementById(s2);
+        s2.innerHTML= "";
+        if(s1.value=="andhra pradesh")
+        {
+            var optionArray=['|--select district','ananthapur|Ananthapur','chittoor|Chitttoor','cuddapah|Cuddapah','east_godavari|East_Godavari','guntur|Guntur','krishna|Krishna','kurnool|Kurnool','nellore|Nellore','prakasam|Prakasam','srikakulam|Srikakulam','visakhapatnam|Visakhapatnam','vizianagaram|Vizianagaram','west_godavari|West_Godavri'];
+
+        }
+        else if(s1.value="arunachal pradesh")
+        {
+            var optionArray=['|--select district','anjaw|Anjaw','changlang|Changlang','dibang_valley|Dibang_Valley','east_kameng|East_Kameng','east_siang|East_Siang','kurung_kumey|Kurung_Kumey','lohit|Lohit','longding|Longding','lower_dibang_valley|Lower_Dibang_Valley','lower_subansiri|Lower_Subansiri','papum_pare|Papum_Pare','tawang|Tawang','tirap|Tirap'];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value="")
+        {
+            var optionArray=['|--select district',];
+        }
+        else if(s1.value=="goa")
+        {
+            var optionArray=['new york|New York','los angles|Los Angles'];
+        }
+        else if(s1.value=="gujarat")
+        {
+            var optionArray=['ahemdabad|Ahemdabad','anand|Anand'];
+        }
+        for(var option in optionArray)
+        {
+            var pair = optionArray[option].split("|")
+            var newoption = document.createElement("option");
+
+            newoption.value=pair[0];
+            newoption.innerHTML=pair[1];
+            s2.options.add(newoption);
+        }
+    }
+</script>
+ <footer>
+        <div class="center copyright">
+            Copyright &copy; LawCourt.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
